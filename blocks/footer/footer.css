@@ -1,0 +1,15 @@
+@import url(./__list/footer__list.css);
+@import url(./__link/footer__link.css);
+@import url(./__copyright/footer__copyright.css);
+@import url(./__inline/footer__inline.css);
+
+.footer {
+  padding: 92px 0 24px 0;
+  margin: 0 auto;
+  max-width: 1184px;
+  max-height: 18px;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 1fr;
+  grid-template-rows: 100%;
+  align-items: end;
+}

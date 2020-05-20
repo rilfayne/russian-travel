@@ -1,0 +1,13 @@
+@import url(./__title/intro__title.css);
+@import url(./__text/intro__text.css);
+@import url(./__list/intro__list.css);
+@import url(./__list/_numbers/intro__list_numbers.css);
+
+.intro {
+  padding-top: 92px;
+  max-width: 984px;
+  max-height: 428px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
