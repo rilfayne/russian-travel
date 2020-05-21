@@ -2,6 +2,25 @@
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  max-width: 640px;
-  margin: 32px auto 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+@media (min-width: 320px) {
+  .lead__subtitle {
+    font-size: calc(1rem + ((1vw - 3.2px) * 3.125));
+    line-height: calc(1.25rem + ((1vw - 3.2px) * 3.5714));
+    max-width: calc(18rem + ((1vw - 3.2px) * 78.5714));
+    margin-top: calc(1rem + ((1vw - 3.2px) * 3.5714));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 768px) {
+  .lead__subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 640px;
+    margin-top: 32px;
+  }
 }

@@ -1,8 +1,20 @@
 .lead__title {
-  font-size: 96px;
-  line-height: 100px;
   text-align: center;
   margin: 0 auto;
   max-width: 720px;
   font-weight: 900;
+}
+
+@media (min-width: 320px) {
+  .lead__title {
+    font-size: calc(2.5rem + ((1vw - 3.2px) * 12.5));
+    line-height: calc(2.75rem + ((1vw - 3.2px) * 12.5));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 768px) {
+  .lead__title {
+    font-size: 96px;
+    line-height: 100px;
+  }
 }
