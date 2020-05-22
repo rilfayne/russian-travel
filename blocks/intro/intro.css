@@ -7,23 +7,22 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  min-height: 0vw;
 }
 
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .intro {
     padding-top: calc(4rem + ((1vw - 3.2px) * 5.3571));
     max-width: calc(18rem + ((1vw - 3.2px) * 96.4286));
-    min-height: 0vw;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .intro {
     padding-top: calc(5.5rem + ((1vw - 7.68px) * 1.5625));
     max-width: calc(45rem + ((1vw - 7.68px) * 103.125));
-    min-height: 0vw;
   }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .intro {
     padding-top: 92px;
     max-width: 984px;

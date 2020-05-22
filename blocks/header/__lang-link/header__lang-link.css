@@ -1,18 +1,18 @@
 .header__lang-link {
   color: #fff;
   text-decoration: none;
+  min-height: 0vw;
 }
 
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .header__lang-link {
     font-size: calc(1.125rem + ((1vw - 3.2px) * 1.3393));
     line-height: calc(1.5rem + ((1vw - 3.2px) * 0.8929));
-    min-height: 0vw;
     margin-bottom: 4px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header__lang-link {
     font-size: 24px;
     line-height: 28px;

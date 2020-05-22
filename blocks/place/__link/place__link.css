@@ -2,6 +2,8 @@
   color: white;
   font-size: 18px;
   line-height: 22px;
+  border-bottom: 0.06em solid #fff;
+  text-decoration: none;
 }
 
 .place__link:hover {

@@ -7,7 +7,38 @@
 
 .place {
   display: grid;
-  grid-template-columns: fit-content(460px) minmax(min-content, max-content);
-  grid-template-rows: minmax(min-content, max-content) fit-content(460px);
-  grid-gap: 48px 40px;
+  min-height: 0vw;
+}
+
+.place:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .place {
+    grid-template-columns: 1fr;
+    margin-bottom: calc(3rem + ((1vw - 3.2px) * 5.3571));
+    grid-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .place {
+    grid-template-columns: min-content 1fr;
+    margin-bottom: calc(4.5rem + ((1vw - 7.68px) * 3.125));
+    grid-gap: 48px 28px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .place {
+    margin-bottom: 80px;
+    grid-gap: 48px 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .place {
+    grid-gap: 48px 40px;
+  }
 }

@@ -4,27 +4,26 @@
   flex-direction: column;
   justify-content: flex-start;
   max-width: 984px;
+  min-height: 0vw;
 }
 
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .lead__map {
     margin-top: calc(2.5rem + ((1vw - 3.2px) * 3.5714));
-    min-height: 0vw;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .lead__map {
     margin-top: 56px;
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .lead__map {
     margin-top: calc(3.5rem + ((1vw - 10.24px) * 3.125));
-    min-height: 0vw;
   }
 }
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .lead__map {
     margin-top: 64px;
   }
