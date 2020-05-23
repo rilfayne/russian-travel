@@ -5,7 +5,9 @@
 
 @media screen and (min-width: 320px) {
   .place__title {
+    /*Плавное увеличение размера шрифта. C 32px до 42px при ширине экрана от 320px до 768px*/
     font-size: calc(2rem + ((1vw - 3.2px) * 2.2321));
+    /*Плавное увеличение высоты линии. C 35px до 46px при ширине экрана от 320px до 768px*/
     line-height: calc(2.1875rem + ((1vw - 3.2px) * 2.4554));
     margin: 0 auto;
     width: 90%;
@@ -13,7 +15,9 @@
 }
 @media screen and (min-width: 768px) {
   .place__title {
+    /*Плавное увеличение размера шрифта. C 42px до 72px при ширине экрана от 768px до 1024px*/
     font-size: calc(2.625rem + ((1vw - 7.68px) * 11.7188));
+    /*Плавное увеличение высоты линии. C 46px до 76px при ширине экрана от 768px до 1024px*/
     line-height: calc(2.875rem + ((1vw - 7.68px) * 11.7188));
     margin: 0;
     width: 97%;

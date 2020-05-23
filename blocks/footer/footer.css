@@ -1,7 +1,7 @@
 @import url(./__list/footer__list.css);
 @import url(./__link/footer__link.css);
 @import url(./__copyright/footer__copyright.css);
-@import url(./__list/_item/footer__list_item.css);
+@import url(./__list-item/footer__list-item.css);
 
 .footer {
     display: flex;
@@ -24,14 +24,21 @@
   .footer {
     margin: 0 auto;
     max-width: 1184px;
-    max-height: 18px;
     flex-direction: row;
-    padding: calc(5.5rem + ((1vw - 7.68px) * 1.5625)) calc(1.5rem + ((1vw - 7.68px) * 9.375)) 24px;
+    /*Плавное увеличение верхнего отступа. C 88px до 92px при ширине экрана от 768px до 1024px*/
+    padding-top: calc(5.5rem + ((1vw - 7.68px) * 1.5625));
+    /*Плавное увеличение левого отступа. C 24px до 48px при ширине экрана от 768px до 1024px*/
+    padding-left: calc(1.5rem + ((1vw - 7.68px) * 9.375));
+    /*Плавное увеличение правого отступа. C 24px до 48px при ширине экрана от 768px до 1024px*/
+    padding-right: calc(1.5rem + ((1vw - 7.68px) * 9.375));
+    padding-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .footer {
-    padding: 92px 48px 24px;
+    padding-top: 92px;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 }

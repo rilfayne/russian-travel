@@ -17,7 +17,9 @@
 
 @media screen and (min-width: 768px) {
   .place__paragraph {
+    /*Плавное увеличение размера шрифта. C 16px до 18px при ширине экрана от 768px до 1024px*/
     font-size: calc(1rem + ((1vw - 7.68px) * 0.7813));
+    /*Плавное увеличение высоты линии. C 16px до 30px при ширине экрана от 768px до 1024px*/
     line-height: calc(1.625rem + ((1vw - 7.68px) * 1.5625));
     margin: 0 0 24px 0;
     width: 100%;

@@ -7,7 +7,9 @@
 
 @media screen and (min-width: 320px) {
   .intro__title {
+    /*Плавное увеличение размера шрифта. C 32px до 54px при ширине экрана от 320px до 768px*/
     font-size: calc(2rem + ((1vw - 3.2px) * 4.9107));
+    /*Плавное увеличение высоты линии. C 35px до 58px при ширине экрана от 320px до 768px*/
     line-height: calc(2.1875rem + ((1vw - 3.2px) * 5.1339));
   }
 }

@@ -1,7 +1,7 @@
 @import url(./__title/intro__title.css);
 @import url(./__text/intro__text.css);
 @import url(./__list/intro__list.css);
-@import url(./__list/_numbers/intro__list_numbers.css);
+@import url(./__list-numbers/intro__list-numbers.css);
 
 .intro {
   margin: 0 auto;
@@ -12,19 +12,40 @@
 
 @media screen and (min-width: 320px) {
   .intro {
+    /*Плавное увеличение верхнего отступа. C 64px до 88px при ширине экрана от 320px до 768px*/
     padding-top: calc(4rem + ((1vw - 3.2px) * 5.3571));
+    /*Плавное увеличение максимальной ширины. C 288px до 720px при ширине экрана от 320px до 768px*/
     max-width: calc(18rem + ((1vw - 3.2px) * 96.4286));
   }
 }
+
 @media screen and (min-width: 768px) {
   .intro {
+    /*Плавное увеличение верхнего отступа. C 88px до 92px при ширине экрана от 768px до 1024px*/
     padding-top: calc(5.5rem + ((1vw - 7.68px) * 1.5625));
-    max-width: calc(45rem + ((1vw - 7.68px) * 103.125));
+    /*Плавное уменьшение максимальной ширины. C 720px до 690px при ширине экрана от 768px до 1024px*/
+    max-width: calc(45rem + ((1vw - 7.68px) * -11.7187));
   }
 }
+
+@media screen and (min-width: 769px) {
+  .intro {
+    /*Плавное увеличение отступа справа. C 1px до 238px при ширине экрана от 769px до 10240px*/
+    padding-right: calc(0.0625rem + ((1vw - 7.69px) * 92.9412));
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .intro {
+    /*Плавное увеличение отступа справа. C 238px до 294px при ширине экрана от 1024px до 1280px*/
+    padding-right: calc(14.875rem + ((1vw - 10.24px) * 21.875));
     padding-top: 92px;
-    max-width: 984px;
+    max-width: 690px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .intro {
+    padding-right: 284px;
   }
 }

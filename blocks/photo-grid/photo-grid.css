@@ -9,7 +9,9 @@
 
 @media screen and (min-width: 320px) {
   .photo-grid {
+    /*Плавное увеличение верхнего отступа. C 64px до 88px при ширине экрана от 320px до 768px*/
     padding-top: calc(4rem + ((1vw - 3.2px) * 5.3571));
+    /*Плавное увеличение максимальной ширины. C 288px до 720px при ширине экрана от 320px до 768px*/
     max-width: calc(18rem + ((1vw - 3.2px) * 96.4286));
     grid-gap: 12px;
   }
@@ -17,7 +19,9 @@
 
 @media screen and (min-width: 768px) {
   .photo-grid {
+    /*Плавное увеличение верхнего отступа. C 88px до 92px при ширине экрана от 768px до 1024px*/
     padding-top: calc(5.5rem + ((1vw - 7.68px) * 1.5625));
+    /*Плавное увеличение максимальной ширины. C 720px до 928px при ширине экрана от 768px до 1024px*/
     max-width: calc(45rem + ((1vw - 7.68px) * 81.25));
     grid-gap: 16px;
   }
@@ -25,7 +29,9 @@
 
 @media screen and (min-width: 1024px) {
   .photo-grid {
+    /*Плавное увеличение верхнего отступа. C 92px до 97px при ширине экрана от 1024px до 1280px*/
     padding-top: calc(5.75rem + ((1vw - 10.24px) * 1.9531));
+    /*Плавное увеличение максимальной ширины. C 928px до 1184px при ширине экрана от 1024px до 1280px*/
     max-width: calc(58rem + ((1vw - 10.24px) * 60.9375));
     grid-gap: 14px;
   }

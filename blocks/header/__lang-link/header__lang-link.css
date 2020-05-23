@@ -4,9 +4,15 @@
   min-height: 0vw;
 }
 
+.header__lang-link:hover {
+  opacity: .8;
+}
+
 @media screen and (min-width: 320px) {
   .header__lang-link {
+    /*Плавное увеличение размера шрифта. C 18px до 24px при ширине экрана от 320px до 768px*/
     font-size: calc(1.125rem + ((1vw - 3.2px) * 1.3393));
+    /*Плавное увеличение высоты линии. C 24px до 28px при ширине экрана от 320px до 768px*/
     line-height: calc(1.5rem + ((1vw - 3.2px) * 0.8929));
     margin-bottom: 4px;
   }

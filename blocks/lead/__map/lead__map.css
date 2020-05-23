@@ -3,28 +3,34 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 984px;
   min-height: 0vw;
 }
 
 @media screen and (min-width: 320px) {
   .lead__map {
+    /*Плавное увеличение верхнего отступа. C 40px до 56px при ширине экрана от 320px до 768px*/
     margin-top: calc(2.5rem + ((1vw - 3.2px) * 3.5714));
   }
 }
 @media screen and (min-width: 768px) {
   .lead__map {
     margin-top: 56px;
+    /*Плавное увеличение максимальной ширины. C 768px до 928px при ширине экрана от 768px до 1024px*/
+    max-width: calc(48rem + ((1vw - 7.68px) * 62.5));
   }
 }
 
 @media screen and (min-width: 1024px) {
   .lead__map {
+    /*Плавное увеличение верхнего отступа. C 56px до 64px при ширине экрана от 1024px до 1280px*/
     margin-top: calc(3.5rem + ((1vw - 10.24px) * 3.125));
+    /*Плавное увеличение максимальной ширины. C 928px до 984px при ширине экрана от 1024px до 1280px*/
+    max-width: calc(58rem + ((1vw - 10.24px) * 21.875));
   }
 }
 @media screen and (min-width: 1280px) {
   .lead__map {
     margin-top: 64px;
+    max-width: 984px;
   }
 }

@@ -8,7 +8,9 @@
 
 @media screen and (min-width: 320px) {
   .lead__title {
+    /*Плавное увеличение размера шрифта. C 40px до 96px при ширине экрана от 320px до 768px*/
     font-size: calc(2.5rem + ((1vw - 3.2px) * 12.5));
+    /*Плавное увеличение высоты линии. C 44px до 100px при ширине экрана от 320px до 768px*/
     line-height: calc(2.75rem + ((1vw - 3.2px) * 12.5));
   }
 }

@@ -17,6 +17,7 @@
 @media screen and (min-width: 320px) {
   .place {
     grid-template-columns: 1fr;
+    /*Плавное увеличение нижнего отступа. C 48px до 72px при ширине экрана от 320px до 768px*/
     margin-bottom: calc(3rem + ((1vw - 3.2px) * 5.3571));
     grid-gap: 32px;
   }
@@ -25,6 +26,7 @@
 @media screen and (min-width: 768px) {
   .place {
     grid-template-columns: min-content 1fr;
+    /*Плавное увеличение нижнего отступа. C 72px до 80px при ширине экрана от 768px до 1024px*/
     margin-bottom: calc(4.5rem + ((1vw - 7.68px) * 3.125));
     grid-gap: 48px 28px;
   }

@@ -11,12 +11,14 @@
 
 @media screen and (min-width: 768px) {
   .place__image {
+    /*Плавное увеличение верхнего отступа. C 340px до 440px при ширине экрана от 768px до 1024px*/
     max-width: calc(21.25rem + ((1vw - 7.68px) * 39.0625));
   }
 }
 
 @media screen and (min-width: 1024px) {
   .place__image {
+    /*Плавное увеличение верхнего отступа. C 440px до 460px при ширине экрана от 1024px до 1280px*/
     max-width: calc(27.5rem + ((1vw - 10.24px) * 7.8125));
   }
 }
